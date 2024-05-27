@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+body{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../../Assets/julianfondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.logo{
+  width: 4em;
+}
+
+.clase{
+    background-color: black;
+    display: inline-block;
+    position: fixed;
+    right: 5px;
+}
+.casiFin{
+    grid-column: 7 / 10;
+    grid-row: 3 / 7;
+    color: #fff;
+}
+/*
+.listaIndex{
+    background-color: black;
+    list-style: none;
+    display: flex;
+    margin: 0% 20px;
+    position: relative;
+}
+
+.listaIndex li a{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px;
+}
+*/
+.nav-link{
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    background: linear-gradient(white,white,white,rgb(0, 174, 255),white,white,white);
+    -webkit-background-clip: text;
+    color: transparent; 
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+ }
+ .justify{
+    justify-content: flex-end;
+ }
+ .cuerpo{
+    display: grid;
+    height: 80vh;
+    width: 100%;
+    grid-template-rows: repeat(1,1fr);
+    transform: skewY(-2deg);
+    float: left;
+    font-family: monospace;
+ }
+
+ /*
+.navbar{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(15,1fr);
+    align-items: center; 
+    position: fixed;
+    top: 0px;
+}
+*/
+.aparte2{
+display: grid;
+margin-bottom: 200px;
+margin-top: 500px;}
+
+
+.tabla{
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-left: 25px;
+}
+.tablaestilo{
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: #000 url("gradient.gif") bottom left repeat-x;
+    color: white;
+}
+.fin{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: white;
+    display: grid;
+    position: fixed;
+    width: 100%;
+    
+}
+.fin2{
+    display: grid;
+    align-items: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.fin h4{
+    margin-top: 0%;
+}
+
+.fin h5{
+    margin-bottom: 0%;
+    display: block;
+    margin-left: 800px;
+    margin-right: auto;
+}
+.conteiner img{
+    width:100%;
+    object-fit: cover;
+    height: 100%;
+}
+.conteiner iframe{
+    width: 100%;
+    object-fit: cover;
+}
+.fuente{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    margin: 100px;
+}
+.conteiner{
+    display: grid;
+    grid-column: auto;
+    grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
+    justify-content: center;
+    margin:5px;
+    width: 100%;
+    gap: 40px;
+    
+}
+.fuentec{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic; 
+    line-height: 45px;
+    color: white;
+}   
+.fuentec h3{
+    font-style: italic; 
+    line-height: 45px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+.fuentec h4{
+    font-style: italic; 
+    line-height: 45px;
+    color: rgb(0, 204, 255);
+    display: flex;
+    justify-content: center;
+    
+}
+input{
+    background-color: rgb(0, 204, 255);
+    border-style: 2px black;
+}
+textarea{
+    background-color: rgb(0, 204, 255);
+    border-style: 2px black;
+}
+footer{
+    position: absolute;
+    bottom: 0%;
+    width: 0%;
+}
+
+@media (max-width: 480px){ 
+
+    .body{
+        background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) ,url(../img/gallardoim.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+}
+    .cuerpo{
+        display: grid;
+        font-size: xx-large;
+        grid-template-rows: repeat(1,1fr);
+        transform: skewY(-2deg);
+        float: left;
+        font-family: monospace;
+        animation-delay: 1s;
+        animation: maquina 10s infinite
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+     }
