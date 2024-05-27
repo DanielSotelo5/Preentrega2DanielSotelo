@@ -52,7 +52,6 @@ body{
     font-size: var(--bs-nav-link-font-size);
     font-weight: var(--bs-nav-link-font-weight);
     background: linear-gradient(white,white,white,rgb(0, 174, 255),white,white,white);
-    -webkit-background-clip: text;
     color: transparent; 
     text-decoration: none;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
